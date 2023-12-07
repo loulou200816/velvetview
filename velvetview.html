@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <link rel="icon" href="image-removebg-preview.png" type="image/x-icon">
+    
+    <style>
+        
+        header {
+            background-color: #9370DB;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            text-align: center;
+           
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 2em;
+        }
+
+        genre-icon img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            cursor: pointer;
+            text-align: center;
+            margin: 1em;
+        }
+        
+          html, body {
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            
+            font-family: Arial sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 50%;
+            text-align: center;
+            justify-content: center;
+            align-content:center;
+            align-items: center;
+            min-height: 100vh;
+            background:#F1F4FD;
+
+
+        }
+          
+
+            img { pointer-events : top left;
+            width:250px;
+            height:300px; }
+           
+.slider-wrapper .image-list{
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap:18px;
+    font-size:0 ;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.slider-wrapper .image-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+    
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+
+}
+            
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.container {
+      max-width: 1200px;
+      width: 95%;
+    }
+.slider-scrollbar .scrollbar-track {
+    height:2px;
+    width:100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+}
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height:100%;
+    width:50%;
+    background: #000;
+    border-radius: inherit;
+    cursor: grab;
+}
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
+.slider-scrollbar:hover .scrollbar-track{
+    height: 4px;
+}
+
+.slider-scrollbar .scrollbar-track:active{
+    cursor: grabbing;
+    height:8px;
+    top:-2px;
+}
+.slider-wrapper .slide-button{
+    position: absolute;
+    top: 50%;
+    height:50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor:pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrapper .slide-button#prev-slide{
+    left:-20px;
+}
+.slider-wrapper .slide-button#next-slide{
+    right:-20px;
+}
+
+    </style>
+
+
+</head>
+
+</script>
+<header>
+        
+    <section>
+        <div class="genre-icon">
+            <a href="horror.html">
+                <p>horror</p>
+            </a>
+        </div>
+
+        <div class="genre-icon">
+            <a href="romcom.html">
+              <p>romcom</p>  
+                
+            </a>
+        </div>
+
+        <div class="genre-icon">
+            <a href="disney.html">
+              <p>disney</p>  
+                
+            </a>
+        </div>
+
+        <div class="genre-icon">
+            <a href="musicales.html">
+               <p>musicales</p>
+                
+            </a>
+        </div>
+
+        <div class="genre-icon">
+            <a href="scifi.html">
+             <p>Sci-Fi</p>
+
+            </a>
+        </div>
+
+        <div class="contact">
+            <a href="contact.html">
+            <p>contact</p>
+        </a>
+        </div>
+        <div>
+            <img class="logo" src="image-removebg-preview.png" />
+        </div>
+    </section>
+</header>
+<body>
+<div class="container">
+    <div class="slider-wrapper">
+       <button  class=" slide-buttonmaterial-symbols-rounded">chevron_left</button>
+        <div class="image-list">
+            <img src="71jo8xEgKsL._AC_UF1000,1000_QL80_.jpg" alt="" class="image-item">
+            <img src="hamilton-das-musical-logo-2022.jpeg" alt="" class="image-item">
+            <img src="image_ed8d7a4e.jpeg" alt=""class="image-item">
+            <img src="image.jpeg" alt="" class="image-item">
+        </div>
+     <button  class=" slide-buttonmaterial-symbols-rounded">chevron_right</button>   
+    </div>
+</div>
+<div class="slider-scrollbar">
+    <div class="scrollbar-track">
+        <div class="scrollbar-thumb"></div>
+    </div>
+
+
+
+</div>
+
+
+</body>
+
+</html>
